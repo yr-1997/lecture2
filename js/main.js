@@ -1,6 +1,6 @@
 let minNumber;
 let maxNumber;
-let boleanChoice;
+let userChoice;
 let sumNumber = 0;
 do{
     minNumber = +prompt('Хей Введи число N');
@@ -25,12 +25,12 @@ if(maxNumber != null && maxNumber != "" && minNumber != false){
 
 }
 
-boleanChoice = confirm('Пропустити парні числа?');
+userChoice = confirm('Пропустити парні числа?');
 for (let i = minNumber; i <= maxNumber; i++){
-if(boleanChoice && i%2 === 1){
+if(userChoice && i%2 === 1){
     sumNumber += i;
 }
-else if(!boleanChoice){
+else if(!userChoice){
     sumNumber += i;
 }}
 
