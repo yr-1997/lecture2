@@ -1,6 +1,5 @@
 let minNumber;
 let maxNumber;
-let userChoice;
 let sumNumber = 0;
 do{
     minNumber = +prompt('Хей Введи число N');
@@ -25,7 +24,7 @@ if(maxNumber != null && maxNumber != "" && minNumber != false){
 
 }
 
-userChoice = confirm('Пропустити парні числа?');
+ const userChoice = confirm('Пропустити парні числа?');
 for (let i = minNumber; i <= maxNumber; i++){
 if(userChoice && i%2 === 1){
     sumNumber += i;
